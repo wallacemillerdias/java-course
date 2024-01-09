@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Console {
 	
 	public static void main(String[] args) {
+		
 		System.out.print("Bom");
 		System.out.print(" dia\n\n");
 		
@@ -28,6 +29,21 @@ public class Console {
 		
 		System.out.printf("%s %s tem %d anos.%n", nome, sobrenome, idade);
 		
-		entrada.close();
+//		entrada.close();
+		
+		Scanner teclado = new Scanner(System.in);
+		 
+	    System.out.println("Qual a sua idade?");
+	    
+	    int idade2 = teclado.nextInt();
+	    teclado.nextLine(); //lê o "\\\\n" que o teclado.nextInt() deixa para trás.
+	    
+	    System.out.println("Qual o seu nome?");
+	    String nome2 = teclado.nextLine();
+	    
+	    System.out.println("Qual o seu sobrenome?");
+	    String sobrenome2 = teclado.nextLine();
+	 
+	    teclado.close();
 	}
 }
