@@ -8,14 +8,14 @@ public class Atribuicao {
 		int b = a;
 		int c = a + b;
 		
-		c += b ;
-		c -= b ;
-		c *= b ;
-		c /= b ;
+		c += b ; // c = c + b;
+		c -= b ; // c = c - b;
+		c *= b ; // c = c * b;
+		c /= b ; // c = c / b;
 		
 		System.out.println(c);
 		
-		c %= 2;
+		c %= 2; // c = c % 2; 0 ou 1
 		System.out.println(c);
 	}
 }
